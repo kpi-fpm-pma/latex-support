@@ -383,22 +383,22 @@
 		\setlength\parindent{0cm}
 			
 		\addvspace{14pt}
-			
-		\setfontsize{20}
-		\centerline{\textbf{Дипломна робота}}
+		\begin{center}			
+			\setfontsize{20}
+			\textbf{Дипломна робота}
 		
-		\setfontsize{14}
-		\centerline{\textbf{на здобуття ступеня бакалавра}}
+			\setfontsize{14}
+			 \textbf{на здобуття ступеня бакалавра}
 		
-		\addvspace{6pt}
-		
-		з напряму підготовки 6.040301 \invcommas{Прикладна математика}
 
-		\begin{singlespace}
-			на тему: \cmdThesis@Title@ThesisTitle
-		\end{singlespace}
+			\textbf{за освітньо-професійною програмою \invcommas{Наука про дані та математичне моделювання}}
+			
+			\textbf{спеціальності 113 \invcommas{Прикладна математика}}
+			
+			\textbf{на тему: \invcommas{\cmdThesis@Title@ThesisTitle}}
+		\end{center}
 		
-		\addvspace{14pt}
+		%\addvspace{14pt}
 		
 		\ifThesis@Title@StudentMale
 			Виконав: студент
@@ -408,15 +408,15 @@
   	IV курсу, групи {\cmdThesis@Title@StudentGroup} 
 		
 		{\renewcommand{\arraystretch}{1.0}
-		 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright}p{4.6cm}>{\raggedright}p{8.25cm}l}
-			& \cmdThesis@Title@StudentName &\_\_\_\_\_\_\_\_\_\_\_\_\_\\
-			Керівник & \cmdThesis@Title@Advisor & \_\_\_\_\_\_\_\_\_\_\_\_\_\\
+		 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright}p{4.6cm}>{\raggedright}p{10cm}l}
+			& \cmdThesis@Title@StudentName &\_\_\_\_\_\_\_\_\_\_\\
+			Керівник & \cmdThesis@Title@Advisor & \_\_\_\_\_\_\_\_\_\_\\
 			\ifundef{\cmdThesis@Title@ConsultantChapter}{\relax}%
-				{Консультант \cmdThesis@Title@ConsultantChapter & \cmdThesis@Title@Consultant & \_\_\_\_\_\_\_\_\_\_\_\_\_\\}
+				{Консультант \cmdThesis@Title@ConsultantChapter & \cmdThesis@Title@Consultant & \_\_\_\_\_\_\_\_\_\_\\}
 			\ifundef{\cmdThesis@Title@ConsultantChapterSecond}{\relax}%
-				{Консультант \cmdThesis@Title@ConsultantChapterSecond & \cmdThesis@Title@ConsultantSecond & \_\_\_\_\_\_\_\_\_\_\_\_\_\\}
-			Консультант із нормоконтролю & старший~викладач Мальчиков~В.~В. & \_\_\_\_\_\_\_\_\_\_\_\_\_\\
-			Рецензент & \cmdThesis@Title@Reviewer & \_\_\_\_\_\_\_\_\_\_\_\_\_\\
+				{Консультант \cmdThesis@Title@ConsultantChapterSecond & \cmdThesis@Title@ConsultantSecond & \_\_\_\_\_\_\_\_\_\_\\}
+			Консультант із нормоконтролю & старший~викладач Мальчиков~В.~В. & \_\_\_\_\_\_\_\_\_\_\\
+			Рецензент & \cmdThesis@Title@Reviewer & \_\_\_\_\_\_\_\_\_\_\\
 		 \end{tabular*}}
 		
 		\vfill
@@ -506,16 +506,18 @@
 			\textbf{\guillemotleft Київський політехнічний інститут}
 			
 			\textbf{імені Ігоря Сікорського\guillemotright}
-		
-		\endgroup
 
-			Факультет прикладної математики
+			\textbf{Факультет прикладної математики}
 			
-			Кафедра прикладної математики
+			\textbf{Кафедра прикладної математики}
 			
-			Рівень вищої освіти --- перший (бакалаврський)
+		\endgroup
 			
-			Напрям підготовки 6.040301 \invcommas{Прикладна математика}
+			Рівень вищої освіти – перший (бакалаврський)
+			
+			Спеціальність -- 113 \invcommas{Прикладна математика}
+			
+			Освітньо-професійна програма \invcommas{Наука про дані та математичне моделювання}
 			
 			\addvspace{14pt} % невеликий відступ
 			
