@@ -1,0 +1,56 @@
+\documentclass{pma-report}
+\begin{document}
+\begin{titlepage}{
+    % title = {}, % необов'язковий параметр
+    % type = {}, % необов'язковий параметр, "звіт про <type> роботу..." якщо title відсутній
+    numero = {1}, % необов'язковий параметр
+    subject = {Приколознавство},
+    theme = {Використання згорткових нейронних мереж для аналізу приколів}, % необов'язковий параметр
+    % variant = {}, % необов'язковий параметр
+    year = {2077},
+    ministry % необов'язковий параметр, вмик./вимк. перший рядок у титулці з "МОН України"
+}
+    Виконав:\\
+    студент VII курсу групи КМ-xx,\\
+    спеціальність F1\\
+    Прикладна математика\\
+    ПІБ\\ % за потреби місце для підпису: \signplace
+    \\
+    Керівник:\\
+    посада, ступінь\\
+    ПІБ
+\end{titlepage}
+
+\tableofcontents
+
+\intro
+Тут зазвичай наведено тему та мету роботи.
+
+\chapter{Розділ основної частини}
+Посилання на додаток --- \verb|\ref{<label>}|: "<див. додаток~\ref{app:listings}">. Тільда --- це нерозривний пробіл, щоб слово "<додаток"> і його позначення не опинилися на різних рядках.
+
+\section{Підрозділ основної частини}
+\subsection{Пункт}
+\subsubsection{Підпункт (якщо дуже треба)}
+\subsection{Ще один пункт}
+
+% Приклад включення зображення vvvv
+% \begin{figure}
+%     \centering
+%     \includegraphics{path/to/image.png}
+%     \caption{Картинка із підписом.}
+%     \label{fig:google-translate}
+% \end{figure}
+
+\conclusions
+Тут знаходяться висновки за всю роботу.
+
+\bibliographystyle{udstu2006}
+\bibliography{bibliography}
+
+\appendix
+\chapter{Лістинги програм}\label{app:listings} % << щоб посилатись на додаток
+За необхідності наводимо лістинги командою
+\verb|\lstinputlisting[language=Python, caption=main.py]{main.py}|
+
+\end{document}
